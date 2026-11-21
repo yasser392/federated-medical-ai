@@ -1,0 +1,53 @@
+# Global configuration for the Federated Medical AI project.
+# All paths are relative to the project root.
+
+seed: 42
+
+runtime:
+  device: cpu            # forced; CUDA is never used
+  num_threads: 1         # torch intra-op threads (1 is fastest for this tiny model)
+
+data:
+  test_size: 0.20        # independent, stratified, held-out global test set
+  val_fraction: 0.20     # fraction of each hospital's data kept for local validation
+
+partition:
+  num_clients: 3
+  client_names: ["Hospital A", "Hospital B", "Hospital C"]
+  # Non-IID: label skew drawn from a Dirichlet distribution (lower alpha = more skew)
+  dirichlet_alpha: 0.5
+  min_samples_per_class: 5   # every hospital keeps at least this many samples of each class
+  max_retries: 1000
+
+model:
+  input_dim: 30
+  hidden_dims: [64, 32]
+  dropout: 0.2
+
+training:
+  batch_size: 16
+  learning_rate: 0.001
+  weight_decay: 0.0
+  threshold: 0.5
+
+centralized:
+  epochs: 25             # = default rounds (5) x local_epochs (5): same number of data passes
+
+local_only:
+  epochs: 25
+
+federated:
+  num_rounds: 5
+  local_epochs: 5
+  fraction_fit: 1.0
+  aggregation_backend: flower   # "flower" (flwr.server.strategy.FedAvg) or "native" (src/federated/aggregation.py)
+  rounds_comparison: [3, 5, 10]
+
+robustness:
+  seeds: [42, 43, 44, 45, 46]   # repeat the core experiments over several seeds (mean +/- std)
+
+paths:
+  results_dir: results
+  figures_dir: results/figures
+  metrics_dir: results/metrics
+  logs_dir: results/logs

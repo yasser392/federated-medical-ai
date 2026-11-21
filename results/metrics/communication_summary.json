@@ -1,0 +1,58 @@
+{
+  "federated_iid": {
+    "num_clients": 3,
+    "num_rounds": 5,
+    "num_messages": 45,
+    "parameters_per_model": 4097,
+    "parameters_transmitted_total": 184365,
+    "bytes_server_to_clients": 514680,
+    "bytes_clients_to_server": 257340,
+    "bytes_total": 772020,
+    "kilobytes_total": 753.93,
+    "bytes_per_round": 154404.0,
+    "fields_sent_by_clients": [
+      "client",
+      "num_examples",
+      "parameters",
+      "train_loss"
+    ],
+    "audits_passed": true,
+    "num_audits": 30,
+    "raw_data_bytes_kept_local": {
+      "Hospital A": 19328,
+      "Hospital B": 19456,
+      "Hospital C": 19456
+    },
+    "raw_data_bytes_total": 58240,
+    "raw_data_bytes_transmitted": 0,
+    "model_parameters": 4097
+  },
+  "federated_non_iid": {
+    "num_clients": 3,
+    "num_rounds": 5,
+    "num_messages": 45,
+    "parameters_per_model": 4097,
+    "parameters_transmitted_total": 184365,
+    "bytes_server_to_clients": 514680,
+    "bytes_clients_to_server": 257340,
+    "bytes_total": 772020,
+    "kilobytes_total": 753.93,
+    "bytes_per_round": 154404.0,
+    "fields_sent_by_clients": [
+      "client",
+      "num_examples",
+      "parameters",
+      "train_loss"
+    ],
+    "audits_passed": true,
+    "num_audits": 30,
+    "raw_data_bytes_kept_local": {
+      "Hospital A": 19072,
+      "Hospital B": 31488,
+      "Hospital C": 7680
+    },
+    "raw_data_bytes_total": 58240,
+    "raw_data_bytes_transmitted": 0,
+    "model_parameters": 4097
+  }
+}

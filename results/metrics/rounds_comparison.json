@@ -1,0 +1,1618 @@
+[
+  {
+    "name": "Federated IID",
+    "mode": "iid",
+    "seed": 42,
+    "num_rounds": 3,
+    "local_epochs": 5,
+    "aggregation_backend": "flower",
+    "partition": [
+      {
+        "hospital": "Hospital A",
+        "n_train": 120,
+        "n_val": 31,
+        "n_total": 151,
+        "n_malignant": 56,
+        "n_benign": 95,
+        "malignant_ratio": 0.3709
+      },
+      {
+        "hospital": "Hospital B",
+        "n_train": 121,
+        "n_val": 31,
+        "n_total": 152,
+        "n_malignant": 57,
+        "n_benign": 95,
+        "malignant_ratio": 0.375
+      },
+      {
+        "hospital": "Hospital C",
+        "n_train": 121,
+        "n_val": 31,
+        "n_total": 152,
+        "n_malignant": 57,
+        "n_benign": 95,
+        "malignant_ratio": 0.375
+      }
+    ],
+    "history": [
+      {
+        "round": 1,
+        "train_loss": 0.37403301466565103,
+        "val_loss": 0.35521354470201716,
+        "val_accuracy": 0.9247311827956989,
+        "test_loss": 0.3358934636701617,
+        "test_accuracy": 0.9298245614035088,
+        "test_precision": 1.0,
+        "test_recall": 0.8095238095238095,
+        "test_f1": 0.8947368421052632,
+        "test_roc_auc": 0.9973544973544973,
+        "client_train_loss": {
+          "Hospital C": 0.3745049974642509,
+          "Hospital A": 0.38904850780963895,
+          "Hospital B": 0.3586696337077243
+        },
+        "client_num_examples": {
+          "Hospital C": 121,
+          "Hospital A": 120,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital C": 0.3608279382028887,
+          "Hospital B": 0.39958492402107487,
+          "Hospital A": 0.30522777188208794
+        }
+      },
+      {
+        "round": 2,
+        "train_loss": 0.11883405424160523,
+        "val_loss": 0.1545622400058213,
+        "val_accuracy": 0.956989247311828,
+        "test_loss": 0.11238828458284077,
+        "test_accuracy": 0.9736842105263158,
+        "test_precision": 1.0,
+        "test_recall": 0.9285714285714286,
+        "test_f1": 0.9629629629629629,
+        "test_roc_auc": 0.9983465608465609,
+        "client_train_loss": {
+          "Hospital A": 0.13050890664259593,
+          "Hospital C": 0.10741297900676727,
+          "Hospital B": 0.11867676345893174
+        },
+        "client_num_examples": {
+          "Hospital A": 120,
+          "Hospital C": 121,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital C": 0.12990513155537267,
+          "Hospital A": 0.0885998587454519,
+          "Hospital B": 0.24518172971663937
+        }
+      },
+      {
+        "round": 3,
+        "train_loss": 0.060290236338633445,
+        "val_loss": 0.12764648083717592,
+        "val_accuracy": 0.967741935483871,
+        "test_loss": 0.06512850209286339,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9983465608465609,
+        "client_train_loss": {
+          "Hospital A": 0.07345240799089273,
+          "Hospital C": 0.040899051195549325,
+          "Hospital B": 0.06662802810757613
+        },
+        "client_num_examples": {
+          "Hospital A": 120,
+          "Hospital C": 121,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital A": 0.06502615251848774,
+          "Hospital C": 0.055041640035567746,
+          "Hospital B": 0.26287164995747225
+        }
+      }
+    ],
+    "metrics": {
+      "accuracy": 0.9824561403508771,
+      "precision": 1.0,
+      "recall": 0.9523809523809523,
+      "f1": 0.975609756097561,
+      "roc_auc": 0.9983465608465609,
+      "test_loss": 0.06512849550991245,
+      "confusion_matrix": [
+        [
+          72,
+          0
+        ],
+        [
+          2,
+          40
+        ]
+      ],
+      "roc_curve": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.06944444444444445,
+          0.06944444444444445,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.023809523809523808,
+          0.09523809523809523,
+          0.14285714285714285,
+          0.9761904761904762,
+          0.9761904761904762,
+          1.0,
+          1.0
+        ]
+      },
+      "n_samples": 114
+    },
+    "communication": {
+      "num_clients": 3,
+      "num_rounds": 3,
+      "num_messages": 27,
+      "parameters_per_model": 4097,
+      "parameters_transmitted_total": 110619,
+      "bytes_server_to_clients": 308808,
+      "bytes_clients_to_server": 154404,
+      "bytes_total": 463212,
+      "kilobytes_total": 452.36,
+      "bytes_per_round": 154404.0,
+      "fields_sent_by_clients": [
+        "client",
+        "num_examples",
+        "parameters",
+        "train_loss"
+      ],
+      "audits_passed": null,
+      "num_audits": 0,
+      "raw_data_bytes_kept_local": {
+        "Hospital A": 19328,
+        "Hospital B": 19456,
+        "Hospital C": 19456
+      },
+      "raw_data_bytes_total": 58240,
+      "raw_data_bytes_transmitted": 0,
+      "model_parameters": 4097
+    }
+  },
+  {
+    "name": "Federated IID",
+    "mode": "iid",
+    "seed": 42,
+    "num_rounds": 5,
+    "local_epochs": 5,
+    "aggregation_backend": "flower",
+    "partition": [
+      {
+        "hospital": "Hospital A",
+        "n_train": 120,
+        "n_val": 31,
+        "n_total": 151,
+        "n_malignant": 56,
+        "n_benign": 95,
+        "malignant_ratio": 0.3709
+      },
+      {
+        "hospital": "Hospital B",
+        "n_train": 121,
+        "n_val": 31,
+        "n_total": 152,
+        "n_malignant": 57,
+        "n_benign": 95,
+        "malignant_ratio": 0.375
+      },
+      {
+        "hospital": "Hospital C",
+        "n_train": 121,
+        "n_val": 31,
+        "n_total": 152,
+        "n_malignant": 57,
+        "n_benign": 95,
+        "malignant_ratio": 0.375
+      }
+    ],
+    "history": [
+      {
+        "round": 1,
+        "train_loss": 0.37403301466565103,
+        "val_loss": 0.35521354470201716,
+        "val_accuracy": 0.9247311827956989,
+        "test_loss": 0.3358934636701617,
+        "test_accuracy": 0.9298245614035088,
+        "test_precision": 1.0,
+        "test_recall": 0.8095238095238095,
+        "test_f1": 0.8947368421052632,
+        "test_roc_auc": 0.9973544973544973,
+        "client_train_loss": {
+          "Hospital C": 0.3745049974642509,
+          "Hospital A": 0.38904850780963895,
+          "Hospital B": 0.3586696337077243
+        },
+        "client_num_examples": {
+          "Hospital C": 121,
+          "Hospital A": 120,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital C": 0.3608279382028887,
+          "Hospital B": 0.39958492402107487,
+          "Hospital A": 0.30522777188208794
+        }
+      },
+      {
+        "round": 2,
+        "train_loss": 0.11883405424160523,
+        "val_loss": 0.1545622400058213,
+        "val_accuracy": 0.956989247311828,
+        "test_loss": 0.11238828458284077,
+        "test_accuracy": 0.9736842105263158,
+        "test_precision": 1.0,
+        "test_recall": 0.9285714285714286,
+        "test_f1": 0.9629629629629629,
+        "test_roc_auc": 0.9983465608465609,
+        "client_train_loss": {
+          "Hospital A": 0.13050890664259593,
+          "Hospital C": 0.10741297900676727,
+          "Hospital B": 0.11867676345893174
+        },
+        "client_num_examples": {
+          "Hospital A": 120,
+          "Hospital C": 121,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital C": 0.12990513155537267,
+          "Hospital A": 0.0885998587454519,
+          "Hospital B": 0.24518172971663937
+        }
+      },
+      {
+        "round": 3,
+        "train_loss": 0.060290236338633445,
+        "val_loss": 0.12764648083717592,
+        "val_accuracy": 0.967741935483871,
+        "test_loss": 0.06512850209286339,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9983465608465609,
+        "client_train_loss": {
+          "Hospital A": 0.07345240799089273,
+          "Hospital C": 0.040899051195549325,
+          "Hospital B": 0.06662802810757613
+        },
+        "client_num_examples": {
+          "Hospital A": 120,
+          "Hospital C": 121,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital A": 0.06502615251848774,
+          "Hospital C": 0.055041640035567746,
+          "Hospital B": 0.26287164995747225
+        }
+      },
+      {
+        "round": 4,
+        "train_loss": 0.03884185265585039,
+        "val_loss": 0.13055403322301884,
+        "val_accuracy": 0.967741935483871,
+        "test_loss": 0.053689504924573396,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9983465608465609,
+        "client_train_loss": {
+          "Hospital C": 0.02187959996075177,
+          "Hospital A": 0.04696295348306497,
+          "Hospital B": 0.04775012105949654
+        },
+        "client_num_examples": {
+          "Hospital C": 121,
+          "Hospital A": 120,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital A": 0.06646081709092663,
+          "Hospital B": 0.2942915578042307,
+          "Hospital C": 0.0309097247738992
+        }
+      },
+      {
+        "round": 5,
+        "train_loss": 0.025557677700983113,
+        "val_loss": 0.141662666233637,
+        "val_accuracy": 0.956989247311828,
+        "test_loss": 0.053823337220309075,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9980158730158729,
+        "client_train_loss": {
+          "Hospital A": 0.036586436660339436,
+          "Hospital C": 0.011723248648345624,
+          "Hospital B": 0.028454494562523424
+        },
+        "client_num_examples": {
+          "Hospital A": 120,
+          "Hospital C": 121,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital B": 0.3243126715383222,
+          "Hospital C": 0.020585327379165158,
+          "Hospital A": 0.08008999978342364
+        }
+      }
+    ],
+    "metrics": {
+      "accuracy": 0.9824561403508771,
+      "precision": 1.0,
+      "recall": 0.9523809523809523,
+      "f1": 0.975609756097561,
+      "roc_auc": 0.9980158730158729,
+      "test_loss": 0.05382333548468366,
+      "confusion_matrix": [
+        [
+          72,
+          0
+        ],
+        [
+          2,
+          40
+        ]
+      ],
+      "roc_curve": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.9722222222222222,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.14285714285714285,
+          0.9761904761904762,
+          0.9761904761904762,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "n_samples": 114
+    },
+    "communication": {
+      "num_clients": 3,
+      "num_rounds": 5,
+      "num_messages": 45,
+      "parameters_per_model": 4097,
+      "parameters_transmitted_total": 184365,
+      "bytes_server_to_clients": 514680,
+      "bytes_clients_to_server": 257340,
+      "bytes_total": 772020,
+      "kilobytes_total": 753.93,
+      "bytes_per_round": 154404.0,
+      "fields_sent_by_clients": [
+        "client",
+        "num_examples",
+        "parameters",
+        "train_loss"
+      ],
+      "audits_passed": null,
+      "num_audits": 0,
+      "raw_data_bytes_kept_local": {
+        "Hospital A": 19328,
+        "Hospital B": 19456,
+        "Hospital C": 19456
+      },
+      "raw_data_bytes_total": 58240,
+      "raw_data_bytes_transmitted": 0,
+      "model_parameters": 4097
+    }
+  },
+  {
+    "name": "Federated IID",
+    "mode": "iid",
+    "seed": 42,
+    "num_rounds": 10,
+    "local_epochs": 5,
+    "aggregation_backend": "flower",
+    "partition": [
+      {
+        "hospital": "Hospital A",
+        "n_train": 120,
+        "n_val": 31,
+        "n_total": 151,
+        "n_malignant": 56,
+        "n_benign": 95,
+        "malignant_ratio": 0.3709
+      },
+      {
+        "hospital": "Hospital B",
+        "n_train": 121,
+        "n_val": 31,
+        "n_total": 152,
+        "n_malignant": 57,
+        "n_benign": 95,
+        "malignant_ratio": 0.375
+      },
+      {
+        "hospital": "Hospital C",
+        "n_train": 121,
+        "n_val": 31,
+        "n_total": 152,
+        "n_malignant": 57,
+        "n_benign": 95,
+        "malignant_ratio": 0.375
+      }
+    ],
+    "history": [
+      {
+        "round": 1,
+        "train_loss": 0.37403301466565103,
+        "val_loss": 0.35521354470201716,
+        "val_accuracy": 0.9247311827956989,
+        "test_loss": 0.3358934636701617,
+        "test_accuracy": 0.9298245614035088,
+        "test_precision": 1.0,
+        "test_recall": 0.8095238095238095,
+        "test_f1": 0.8947368421052632,
+        "test_roc_auc": 0.9973544973544973,
+        "client_train_loss": {
+          "Hospital C": 0.3745049974642509,
+          "Hospital A": 0.38904850780963895,
+          "Hospital B": 0.3586696337077243
+        },
+        "client_num_examples": {
+          "Hospital C": 121,
+          "Hospital A": 120,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital C": 0.3608279382028887,
+          "Hospital B": 0.39958492402107487,
+          "Hospital A": 0.30522777188208794
+        }
+      },
+      {
+        "round": 2,
+        "train_loss": 0.11883405424160523,
+        "val_loss": 0.1545622400058213,
+        "val_accuracy": 0.956989247311828,
+        "test_loss": 0.11238828458284077,
+        "test_accuracy": 0.9736842105263158,
+        "test_precision": 1.0,
+        "test_recall": 0.9285714285714286,
+        "test_f1": 0.9629629629629629,
+        "test_roc_auc": 0.9983465608465609,
+        "client_train_loss": {
+          "Hospital A": 0.13050890664259593,
+          "Hospital C": 0.10741297900676727,
+          "Hospital B": 0.11867676345893174
+        },
+        "client_num_examples": {
+          "Hospital A": 120,
+          "Hospital C": 121,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital C": 0.12990513155537267,
+          "Hospital A": 0.0885998587454519,
+          "Hospital B": 0.24518172971663937
+        }
+      },
+      {
+        "round": 3,
+        "train_loss": 0.060290236338633445,
+        "val_loss": 0.12764648083717592,
+        "val_accuracy": 0.967741935483871,
+        "test_loss": 0.06512850209286339,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9983465608465609,
+        "client_train_loss": {
+          "Hospital A": 0.07345240799089273,
+          "Hospital C": 0.040899051195549325,
+          "Hospital B": 0.06662802810757613
+        },
+        "client_num_examples": {
+          "Hospital A": 120,
+          "Hospital C": 121,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital A": 0.06502615251848774,
+          "Hospital C": 0.055041640035567746,
+          "Hospital B": 0.26287164995747225
+        }
+      },
+      {
+        "round": 4,
+        "train_loss": 0.03884185265585039,
+        "val_loss": 0.13055403322301884,
+        "val_accuracy": 0.967741935483871,
+        "test_loss": 0.053689504924573396,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9983465608465609,
+        "client_train_loss": {
+          "Hospital C": 0.02187959996075177,
+          "Hospital A": 0.04696295348306497,
+          "Hospital B": 0.04775012105949654
+        },
+        "client_num_examples": {
+          "Hospital C": 121,
+          "Hospital A": 120,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital A": 0.06646081709092663,
+          "Hospital B": 0.2942915578042307,
+          "Hospital C": 0.0309097247738992
+        }
+      },
+      {
+        "round": 5,
+        "train_loss": 0.025557677700983113,
+        "val_loss": 0.141662666233637,
+        "val_accuracy": 0.956989247311828,
+        "test_loss": 0.053823337220309075,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9980158730158729,
+        "client_train_loss": {
+          "Hospital A": 0.036586436660339436,
+          "Hospital C": 0.011723248648345624,
+          "Hospital B": 0.028454494562523424
+        },
+        "client_num_examples": {
+          "Hospital A": 120,
+          "Hospital C": 121,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital B": 0.3243126715383222,
+          "Hospital C": 0.020585327379165158,
+          "Hospital A": 0.08008999978342364
+        }
+      },
+      {
+        "round": 6,
+        "train_loss": 0.022087382764339407,
+        "val_loss": 0.15415787248201268,
+        "val_accuracy": 0.956989247311828,
+        "test_loss": 0.05633013290271424,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9976851851851852,
+        "client_train_loss": {
+          "Hospital A": 0.03277243329212069,
+          "Hospital B": 0.02670104241706739,
+          "Hospital C": 0.006876978786539071
+        },
+        "client_num_examples": {
+          "Hospital A": 120,
+          "Hospital B": 121,
+          "Hospital C": 121
+        },
+        "client_val_loss": {
+          "Hospital A": 0.09602724352190571,
+          "Hospital B": 0.3528401467107957,
+          "Hospital C": 0.013606227213336576
+        }
+      },
+      {
+        "round": 7,
+        "train_loss": 0.01586794354827452,
+        "val_loss": 0.16496978395728654,
+        "val_accuracy": 0.956989247311828,
+        "test_loss": 0.06085184164214553,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9976851851851852,
+        "client_train_loss": {
+          "Hospital B": 0.017391076594329445,
+          "Hospital C": 0.004071721938450259,
+          "Hospital A": 0.0262266411834086
+        },
+        "client_num_examples": {
+          "Hospital B": 121,
+          "Hospital C": 121,
+          "Hospital A": 120
+        },
+        "client_val_loss": {
+          "Hospital A": 0.10636525000295331,
+          "Hospital B": 0.3787180685227917,
+          "Hospital C": 0.00982603334611462
+        }
+      },
+      {
+        "round": 8,
+        "train_loss": 0.01344359640237227,
+        "val_loss": 0.17546110528130685,
+        "val_accuracy": 0.946236559139785,
+        "test_loss": 0.06518682680631939,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9973544973544974,
+        "client_train_loss": {
+          "Hospital B": 0.019270926452249534,
+          "Hospital A": 0.017890803096815944,
+          "Hospital C": 0.0032058134323855753
+        },
+        "client_num_examples": {
+          "Hospital B": 121,
+          "Hospital A": 120,
+          "Hospital C": 121
+        },
+        "client_val_loss": {
+          "Hospital C": 0.007525067656270919,
+          "Hospital B": 0.4004860231953283,
+          "Hospital A": 0.11837222499232139
+        }
+      },
+      {
+        "round": 9,
+        "train_loss": 0.01558196890629051,
+        "val_loss": 0.1919838385556334,
+        "val_accuracy": 0.946236559139785,
+        "test_loss": 0.07087397157100209,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9973544973544974,
+        "client_train_loss": {
+          "Hospital C": 0.0027523590622215784,
+          "Hospital A": 0.021616348003347715,
+          "Hospital B": 0.02242707055493081
+        },
+        "client_num_examples": {
+          "Hospital C": 121,
+          "Hospital A": 120,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital C": 0.005098789930343628,
+          "Hospital A": 0.13432236640684067,
+          "Hospital B": 0.43653035932971584
+        }
+      },
+      {
+        "round": 10,
+        "train_loss": 0.011514617467708486,
+        "val_loss": 0.20172373437753288,
+        "val_accuracy": 0.946236559139785,
+        "test_loss": 0.07675690399973016,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9970238095238096,
+        "client_train_loss": {
+          "Hospital A": 0.01694245239098867,
+          "Hospital C": 0.0016269527953204676,
+          "Hospital B": 0.016019305356678146
+        },
+        "client_num_examples": {
+          "Hospital A": 120,
+          "Hospital C": 121,
+          "Hospital B": 121
+        },
+        "client_val_loss": {
+          "Hospital B": 0.46629918006158644,
+          "Hospital C": 0.003563418984413147,
+          "Hospital A": 0.13530860408659903
+        }
+      }
+    ],
+    "metrics": {
+      "accuracy": 0.9824561403508771,
+      "precision": 1.0,
+      "recall": 0.9523809523809523,
+      "f1": 0.975609756097561,
+      "roc_auc": 0.9970238095238096,
+      "test_loss": 0.07675696109072937,
+      "confusion_matrix": [
+        [
+          72,
+          0
+        ],
+        [
+          2,
+          40
+        ]
+      ],
+      "roc_curve": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.013888888888888888,
+          0.013888888888888888,
+          0.1111111111111111,
+          0.1111111111111111,
+          0.7083333333333334,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.42857142857142855,
+          0.47619047619047616,
+          0.9523809523809523,
+          0.9523809523809523,
+          0.9761904761904762,
+          0.9761904761904762,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "n_samples": 114
+    },
+    "communication": {
+      "num_clients": 3,
+      "num_rounds": 10,
+      "num_messages": 90,
+      "parameters_per_model": 4097,
+      "parameters_transmitted_total": 368730,
+      "bytes_server_to_clients": 1029360,
+      "bytes_clients_to_server": 514680,
+      "bytes_total": 1544040,
+      "kilobytes_total": 1507.85,
+      "bytes_per_round": 154404.0,
+      "fields_sent_by_clients": [
+        "client",
+        "num_examples",
+        "parameters",
+        "train_loss"
+      ],
+      "audits_passed": null,
+      "num_audits": 0,
+      "raw_data_bytes_kept_local": {
+        "Hospital A": 19328,
+        "Hospital B": 19456,
+        "Hospital C": 19456
+      },
+      "raw_data_bytes_total": 58240,
+      "raw_data_bytes_transmitted": 0,
+      "model_parameters": 4097
+    }
+  },
+  {
+    "name": "Federated Non-IID",
+    "mode": "non_iid",
+    "seed": 42,
+    "num_rounds": 3,
+    "local_epochs": 5,
+    "aggregation_backend": "flower",
+    "partition": [
+      {
+        "hospital": "Hospital A",
+        "n_train": 119,
+        "n_val": 30,
+        "n_total": 149,
+        "n_malignant": 99,
+        "n_benign": 50,
+        "malignant_ratio": 0.6644
+      },
+      {
+        "hospital": "Hospital B",
+        "n_train": 196,
+        "n_val": 50,
+        "n_total": 246,
+        "n_malignant": 46,
+        "n_benign": 200,
+        "malignant_ratio": 0.187
+      },
+      {
+        "hospital": "Hospital C",
+        "n_train": 48,
+        "n_val": 12,
+        "n_total": 60,
+        "n_malignant": 25,
+        "n_benign": 35,
+        "malignant_ratio": 0.4167
+      }
+    ],
+    "history": [
+      {
+        "round": 1,
+        "train_loss": 0.29447760209235935,
+        "val_loss": 0.35632317999134894,
+        "val_accuracy": 0.9021739130434783,
+        "test_loss": 0.3109199122378701,
+        "test_accuracy": 0.9298245614035088,
+        "test_precision": 1.0,
+        "test_recall": 0.8095238095238095,
+        "test_f1": 0.8947368421052632,
+        "test_roc_auc": 0.9973544973544973,
+        "client_train_loss": {
+          "Hospital C": 0.5951497356096903,
+          "Hospital A": 0.4118396917811963,
+          "Hospital B": 0.1495880557566273
+        },
+        "client_num_examples": {
+          "Hospital C": 48,
+          "Hospital A": 119,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital C": 0.4366734027862549,
+          "Hospital B": 0.3068716049194336,
+          "Hospital A": 0.4066023826599121
+        }
+      },
+      {
+        "round": 2,
+        "train_loss": 0.11190079861723358,
+        "val_loss": 0.15281871868216473,
+        "val_accuracy": 0.9130434782608695,
+        "test_loss": 0.11078514969139769,
+        "test_accuracy": 0.9649122807017544,
+        "test_precision": 1.0,
+        "test_recall": 0.9047619047619048,
+        "test_f1": 0.95,
+        "test_roc_auc": 0.998015873015873,
+        "client_train_loss": {
+          "Hospital A": 0.1594789985160367,
+          "Hospital C": 0.20124195019404092,
+          "Hospital B": 0.06113456870068093
+        },
+        "client_num_examples": {
+          "Hospital A": 119,
+          "Hospital C": 48,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital C": 0.2271454930305481,
+          "Hospital A": 0.17646371523539225,
+          "Hospital B": 0.12079329490661621
+        }
+      },
+      {
+        "round": 3,
+        "train_loss": 0.06433041520498836,
+        "val_loss": 0.0931700182997662,
+        "val_accuracy": 0.967391304347826,
+        "test_loss": 0.07082728335731908,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9983465608465609,
+        "client_train_loss": {
+          "Hospital A": 0.11197842128512238,
+          "Hospital C": 0.06243203580379486,
+          "Hospital B": 0.03586617789744419
+        },
+        "client_num_examples": {
+          "Hospital A": 119,
+          "Hospital C": 48,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital A": 0.13360605239868165,
+          "Hospital C": 0.09266887108484904,
+          "Hospital B": 0.06902867317199707
+        }
+      }
+    ],
+    "metrics": {
+      "accuracy": 0.9824561403508771,
+      "precision": 1.0,
+      "recall": 0.9523809523809523,
+      "f1": 0.975609756097561,
+      "roc_auc": 0.9983465608465609,
+      "test_loss": 0.07082728170998694,
+      "confusion_matrix": [
+        [
+          72,
+          0
+        ],
+        [
+          2,
+          40
+        ]
+      ],
+      "roc_curve": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.06944444444444445,
+          0.06944444444444445,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.023809523809523808,
+          0.9761904761904762,
+          0.9761904761904762,
+          1.0,
+          1.0
+        ]
+      },
+      "n_samples": 114
+    },
+    "communication": {
+      "num_clients": 3,
+      "num_rounds": 3,
+      "num_messages": 27,
+      "parameters_per_model": 4097,
+      "parameters_transmitted_total": 110619,
+      "bytes_server_to_clients": 308808,
+      "bytes_clients_to_server": 154404,
+      "bytes_total": 463212,
+      "kilobytes_total": 452.36,
+      "bytes_per_round": 154404.0,
+      "fields_sent_by_clients": [
+        "client",
+        "num_examples",
+        "parameters",
+        "train_loss"
+      ],
+      "audits_passed": null,
+      "num_audits": 0,
+      "raw_data_bytes_kept_local": {
+        "Hospital A": 19072,
+        "Hospital B": 31488,
+        "Hospital C": 7680
+      },
+      "raw_data_bytes_total": 58240,
+      "raw_data_bytes_transmitted": 0,
+      "model_parameters": 4097
+    }
+  },
+  {
+    "name": "Federated Non-IID",
+    "mode": "non_iid",
+    "seed": 42,
+    "num_rounds": 5,
+    "local_epochs": 5,
+    "aggregation_backend": "flower",
+    "partition": [
+      {
+        "hospital": "Hospital A",
+        "n_train": 119,
+        "n_val": 30,
+        "n_total": 149,
+        "n_malignant": 99,
+        "n_benign": 50,
+        "malignant_ratio": 0.6644
+      },
+      {
+        "hospital": "Hospital B",
+        "n_train": 196,
+        "n_val": 50,
+        "n_total": 246,
+        "n_malignant": 46,
+        "n_benign": 200,
+        "malignant_ratio": 0.187
+      },
+      {
+        "hospital": "Hospital C",
+        "n_train": 48,
+        "n_val": 12,
+        "n_total": 60,
+        "n_malignant": 25,
+        "n_benign": 35,
+        "malignant_ratio": 0.4167
+      }
+    ],
+    "history": [
+      {
+        "round": 1,
+        "train_loss": 0.29447760209235935,
+        "val_loss": 0.35632317999134894,
+        "val_accuracy": 0.9021739130434783,
+        "test_loss": 0.3109199122378701,
+        "test_accuracy": 0.9298245614035088,
+        "test_precision": 1.0,
+        "test_recall": 0.8095238095238095,
+        "test_f1": 0.8947368421052632,
+        "test_roc_auc": 0.9973544973544973,
+        "client_train_loss": {
+          "Hospital C": 0.5951497356096903,
+          "Hospital A": 0.4118396917811963,
+          "Hospital B": 0.1495880557566273
+        },
+        "client_num_examples": {
+          "Hospital C": 48,
+          "Hospital A": 119,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital C": 0.4366734027862549,
+          "Hospital B": 0.3068716049194336,
+          "Hospital A": 0.4066023826599121
+        }
+      },
+      {
+        "round": 2,
+        "train_loss": 0.11190079861723358,
+        "val_loss": 0.15281871868216473,
+        "val_accuracy": 0.9130434782608695,
+        "test_loss": 0.11078514969139769,
+        "test_accuracy": 0.9649122807017544,
+        "test_precision": 1.0,
+        "test_recall": 0.9047619047619048,
+        "test_f1": 0.95,
+        "test_roc_auc": 0.998015873015873,
+        "client_train_loss": {
+          "Hospital A": 0.1594789985160367,
+          "Hospital C": 0.20124195019404092,
+          "Hospital B": 0.06113456870068093
+        },
+        "client_num_examples": {
+          "Hospital A": 119,
+          "Hospital C": 48,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital C": 0.2271454930305481,
+          "Hospital A": 0.17646371523539225,
+          "Hospital B": 0.12079329490661621
+        }
+      },
+      {
+        "round": 3,
+        "train_loss": 0.06433041520498836,
+        "val_loss": 0.0931700182997662,
+        "val_accuracy": 0.967391304347826,
+        "test_loss": 0.07082728335731908,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9983465608465609,
+        "client_train_loss": {
+          "Hospital A": 0.11197842128512238,
+          "Hospital C": 0.06243203580379486,
+          "Hospital B": 0.03586617789744419
+        },
+        "client_num_examples": {
+          "Hospital A": 119,
+          "Hospital C": 48,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital A": 0.13360605239868165,
+          "Hospital C": 0.09266887108484904,
+          "Hospital B": 0.06902867317199707
+        }
+      },
+      {
+        "round": 4,
+        "train_loss": 0.048074085450123163,
+        "val_loss": 0.08154901019904924,
+        "val_accuracy": 0.9782608695652174,
+        "test_loss": 0.05895544353284334,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.998015873015873,
+        "client_train_loss": {
+          "Hospital C": 0.027343636999527614,
+          "Hospital A": 0.09242437901992757,
+          "Hospital B": 0.026223966015540823
+        },
+        "client_num_examples": {
+          "Hospital C": 48,
+          "Hospital A": 119,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital A": 0.1502219518025716,
+          "Hospital B": 0.047694740295410154,
+          "Hospital C": 0.05092611412207285
+        }
+      },
+      {
+        "round": 5,
+        "train_loss": 0.04336464125663042,
+        "val_loss": 0.08407028796880142,
+        "val_accuracy": 0.9891304347826086,
+        "test_loss": 0.05685272551419442,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9976851851851852,
+        "client_train_loss": {
+          "Hospital A": 0.09043566773042959,
+          "Hospital C": 0.014512883809705576,
+          "Hospital B": 0.02185154027229517
+        },
+        "client_num_examples": {
+          "Hospital A": 119,
+          "Hospital C": 48,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital B": 0.03676695823669433,
+          "Hospital C": 0.04016379018624624,
+          "Hospital A": 0.18047176996866862
+        }
+      }
+    ],
+    "metrics": {
+      "accuracy": 0.9824561403508771,
+      "precision": 1.0,
+      "recall": 0.9523809523809523,
+      "f1": 0.975609756097561,
+      "roc_auc": 0.9976851851851852,
+      "test_loss": 0.056852752962108434,
+      "confusion_matrix": [
+        [
+          72,
+          0
+        ],
+        [
+          2,
+          40
+        ]
+      ],
+      "roc_curve": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.09722222222222222,
+          0.09722222222222222,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.14285714285714285,
+          0.9761904761904762,
+          0.9761904761904762,
+          1.0,
+          1.0
+        ]
+      },
+      "n_samples": 114
+    },
+    "communication": {
+      "num_clients": 3,
+      "num_rounds": 5,
+      "num_messages": 45,
+      "parameters_per_model": 4097,
+      "parameters_transmitted_total": 184365,
+      "bytes_server_to_clients": 514680,
+      "bytes_clients_to_server": 257340,
+      "bytes_total": 772020,
+      "kilobytes_total": 753.93,
+      "bytes_per_round": 154404.0,
+      "fields_sent_by_clients": [
+        "client",
+        "num_examples",
+        "parameters",
+        "train_loss"
+      ],
+      "audits_passed": null,
+      "num_audits": 0,
+      "raw_data_bytes_kept_local": {
+        "Hospital A": 19072,
+        "Hospital B": 31488,
+        "Hospital C": 7680
+      },
+      "raw_data_bytes_total": 58240,
+      "raw_data_bytes_transmitted": 0,
+      "model_parameters": 4097
+    }
+  },
+  {
+    "name": "Federated Non-IID",
+    "mode": "non_iid",
+    "seed": 42,
+    "num_rounds": 10,
+    "local_epochs": 5,
+    "aggregation_backend": "flower",
+    "partition": [
+      {
+        "hospital": "Hospital A",
+        "n_train": 119,
+        "n_val": 30,
+        "n_total": 149,
+        "n_malignant": 99,
+        "n_benign": 50,
+        "malignant_ratio": 0.6644
+      },
+      {
+        "hospital": "Hospital B",
+        "n_train": 196,
+        "n_val": 50,
+        "n_total": 246,
+        "n_malignant": 46,
+        "n_benign": 200,
+        "malignant_ratio": 0.187
+      },
+      {
+        "hospital": "Hospital C",
+        "n_train": 48,
+        "n_val": 12,
+        "n_total": 60,
+        "n_malignant": 25,
+        "n_benign": 35,
+        "malignant_ratio": 0.4167
+      }
+    ],
+    "history": [
+      {
+        "round": 1,
+        "train_loss": 0.29447760209235935,
+        "val_loss": 0.35632317999134894,
+        "val_accuracy": 0.9021739130434783,
+        "test_loss": 0.3109199122378701,
+        "test_accuracy": 0.9298245614035088,
+        "test_precision": 1.0,
+        "test_recall": 0.8095238095238095,
+        "test_f1": 0.8947368421052632,
+        "test_roc_auc": 0.9973544973544973,
+        "client_train_loss": {
+          "Hospital C": 0.5951497356096903,
+          "Hospital A": 0.4118396917811963,
+          "Hospital B": 0.1495880557566273
+        },
+        "client_num_examples": {
+          "Hospital C": 48,
+          "Hospital A": 119,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital C": 0.4366734027862549,
+          "Hospital B": 0.3068716049194336,
+          "Hospital A": 0.4066023826599121
+        }
+      },
+      {
+        "round": 2,
+        "train_loss": 0.11190079861723358,
+        "val_loss": 0.15281871868216473,
+        "val_accuracy": 0.9130434782608695,
+        "test_loss": 0.11078514969139769,
+        "test_accuracy": 0.9649122807017544,
+        "test_precision": 1.0,
+        "test_recall": 0.9047619047619048,
+        "test_f1": 0.95,
+        "test_roc_auc": 0.998015873015873,
+        "client_train_loss": {
+          "Hospital A": 0.1594789985160367,
+          "Hospital C": 0.20124195019404092,
+          "Hospital B": 0.06113456870068093
+        },
+        "client_num_examples": {
+          "Hospital A": 119,
+          "Hospital C": 48,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital C": 0.2271454930305481,
+          "Hospital A": 0.17646371523539225,
+          "Hospital B": 0.12079329490661621
+        }
+      },
+      {
+        "round": 3,
+        "train_loss": 0.06433041520498836,
+        "val_loss": 0.0931700182997662,
+        "val_accuracy": 0.967391304347826,
+        "test_loss": 0.07082728335731908,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9983465608465609,
+        "client_train_loss": {
+          "Hospital A": 0.11197842128512238,
+          "Hospital C": 0.06243203580379486,
+          "Hospital B": 0.03586617789744419
+        },
+        "client_num_examples": {
+          "Hospital A": 119,
+          "Hospital C": 48,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital A": 0.13360605239868165,
+          "Hospital C": 0.09266887108484904,
+          "Hospital B": 0.06902867317199707
+        }
+      },
+      {
+        "round": 4,
+        "train_loss": 0.048074085450123163,
+        "val_loss": 0.08154901019904924,
+        "val_accuracy": 0.9782608695652174,
+        "test_loss": 0.05895544353284334,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.998015873015873,
+        "client_train_loss": {
+          "Hospital C": 0.027343636999527614,
+          "Hospital A": 0.09242437901992757,
+          "Hospital B": 0.026223966015540823
+        },
+        "client_num_examples": {
+          "Hospital C": 48,
+          "Hospital A": 119,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital A": 0.1502219518025716,
+          "Hospital B": 0.047694740295410154,
+          "Hospital C": 0.05092611412207285
+        }
+      },
+      {
+        "round": 5,
+        "train_loss": 0.04336464125663042,
+        "val_loss": 0.08407028796880142,
+        "val_accuracy": 0.9891304347826086,
+        "test_loss": 0.05685272551419442,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9976851851851852,
+        "client_train_loss": {
+          "Hospital A": 0.09043566773042959,
+          "Hospital C": 0.014512883809705576,
+          "Hospital B": 0.02185154027229517
+        },
+        "client_num_examples": {
+          "Hospital A": 119,
+          "Hospital C": 48,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital B": 0.03676695823669433,
+          "Hospital C": 0.04016379018624624,
+          "Hospital A": 0.18047176996866862
+        }
+      },
+      {
+        "round": 6,
+        "train_loss": 0.0348430638337513,
+        "val_loss": 0.08708072810069374,
+        "val_accuracy": 0.9891304347826086,
+        "test_loss": 0.055841316256606786,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9973544973544973,
+        "client_train_loss": {
+          "Hospital A": 0.0744377011668031,
+          "Hospital B": 0.017372460142538255,
+          "Hospital C": 0.008019657184680304
+        },
+        "client_num_examples": {
+          "Hospital A": 119,
+          "Hospital B": 196,
+          "Hospital C": 48
+        },
+        "client_val_loss": {
+          "Hospital A": 0.19662353197733562,
+          "Hospital B": 0.034409143924713136,
+          "Hospital C": 0.03268865247567495
+        }
+      },
+      {
+        "round": 7,
+        "train_loss": 0.029167076709395473,
+        "val_loss": 0.08860652116329773,
+        "val_accuracy": 0.9782608695652174,
+        "test_loss": 0.05806007301598264,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9973544973544974,
+        "client_train_loss": {
+          "Hospital B": 0.01397287771485898,
+          "Hospital C": 0.006814484445688625,
+          "Hospital A": 0.06320898789920289
+        },
+        "client_num_examples": {
+          "Hospital B": 196,
+          "Hospital C": 48,
+          "Hospital A": 119
+        },
+        "client_val_loss": {
+          "Hospital A": 0.20592729250590006,
+          "Hospital B": 0.0323945689201355,
+          "Hospital C": 0.02952106048663457
+        }
+      },
+      {
+        "round": 8,
+        "train_loss": 0.027226822602129015,
+        "val_loss": 0.09166163206100464,
+        "val_accuracy": 0.9891304347826086,
+        "test_loss": 0.06431912539298074,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9966931216931216,
+        "client_train_loss": {
+          "Hospital B": 0.010286390063904074,
+          "Hospital A": 0.06398741351518811,
+          "Hospital C": 0.005264623827921848
+        },
+        "client_num_examples": {
+          "Hospital B": 196,
+          "Hospital A": 119,
+          "Hospital C": 48
+        },
+        "client_val_loss": {
+          "Hospital C": 0.033572097619374595,
+          "Hospital B": 0.028124675750732422,
+          "Hospital A": 0.2207923730214437
+        }
+      },
+      {
+        "round": 9,
+        "train_loss": 0.024057365898119885,
+        "val_loss": 0.09706763080928636,
+        "val_accuracy": 0.9782608695652174,
+        "test_loss": 0.07070457726194147,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9963624338624338,
+        "client_train_loss": {
+          "Hospital C": 0.004302035163467129,
+          "Hospital A": 0.06325358152389526,
+          "Hospital B": 0.005097703733814082
+        },
+        "client_num_examples": {
+          "Hospital C": 48,
+          "Hospital A": 119,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital C": 0.035610040028889976,
+          "Hospital A": 0.23886642456054688,
+          "Hospital B": 0.026738176345825194
+        }
+      },
+      {
+        "round": 10,
+        "train_loss": 0.02262918581415132,
+        "val_loss": 0.10215156784524089,
+        "val_accuracy": 0.9782608695652174,
+        "test_loss": 0.07644084461948328,
+        "test_accuracy": 0.9824561403508771,
+        "test_precision": 1.0,
+        "test_recall": 0.9523809523809523,
+        "test_f1": 0.975609756097561,
+        "test_roc_auc": 0.9957010582010583,
+        "client_train_loss": {
+          "Hospital A": 0.05680860441271998,
+          "Hospital C": 0.0015729960675040882,
+          "Hospital B": 0.007034013847872729
+        },
+        "client_num_examples": {
+          "Hospital A": 119,
+          "Hospital C": 48,
+          "Hospital B": 196
+        },
+        "client_val_loss": {
+          "Hospital B": 0.031192088127136232,
+          "Hospital C": 0.03629962851603826,
+          "Hospital A": 0.24675814310709634
+        }
+      }
+    ],
+    "metrics": {
+      "accuracy": 0.9824561403508771,
+      "precision": 1.0,
+      "recall": 0.9523809523809523,
+      "f1": 0.975609756097561,
+      "roc_auc": 0.9957010582010583,
+      "test_loss": 0.07644084914667659,
+      "confusion_matrix": [
+        [
+          72,
+          0
+        ],
+        [
+          2,
+          40
+        ]
+      ],
+      "roc_curve": {
+        "fpr": [
+          0.0,
+          0.0,
+          0.0,
+          0.013888888888888888,
+          0.013888888888888888,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.9444444444444444,
+          1.0
+        ],
+        "tpr": [
+          0.0,
+          0.5238095238095238,
+          0.9523809523809523,
+          0.9523809523809523,
+          0.9761904761904762,
+          0.9761904761904762,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "n_samples": 114
+    },
+    "communication": {
+      "num_clients": 3,
+      "num_rounds": 10,
+      "num_messages": 90,
+      "parameters_per_model": 4097,
+      "parameters_transmitted_total": 368730,
+      "bytes_server_to_clients": 1029360,
+      "bytes_clients_to_server": 514680,
+      "bytes_total": 1544040,
+      "kilobytes_total": 1507.85,
+      "bytes_per_round": 154404.0,
+      "fields_sent_by_clients": [
+        "client",
+        "num_examples",
+        "parameters",
+        "train_loss"
+      ],
+      "audits_passed": null,
+      "num_audits": 0,
+      "raw_data_bytes_kept_local": {
+        "Hospital A": 19072,
+        "Hospital B": 31488,
+        "Hospital C": 7680
+      },
+      "raw_data_bytes_total": 58240,
+      "raw_data_bytes_transmitted": 0,
+      "model_parameters": 4097
+    }
+  }
+]

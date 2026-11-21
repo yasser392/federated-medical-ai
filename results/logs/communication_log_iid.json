@@ -1,0 +1,1791 @@
+{
+  "messages": [
+    {
+      "round": 1,
+      "client": "Hospital C",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 1,
+      "client": "Hospital C",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 1,
+      "client": "Hospital A",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 1,
+      "client": "Hospital A",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 1,
+      "client": "Hospital B",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 1,
+      "client": "Hospital B",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 1,
+      "client": "Hospital C",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 1,
+      "client": "Hospital B",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 1,
+      "client": "Hospital A",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 2,
+      "client": "Hospital A",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 2,
+      "client": "Hospital A",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 2,
+      "client": "Hospital C",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 2,
+      "client": "Hospital C",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 2,
+      "client": "Hospital B",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 2,
+      "client": "Hospital B",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 2,
+      "client": "Hospital C",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 2,
+      "client": "Hospital A",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 2,
+      "client": "Hospital B",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 3,
+      "client": "Hospital A",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 3,
+      "client": "Hospital A",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 3,
+      "client": "Hospital C",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 3,
+      "client": "Hospital C",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 3,
+      "client": "Hospital B",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 3,
+      "client": "Hospital B",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 3,
+      "client": "Hospital A",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 3,
+      "client": "Hospital C",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 3,
+      "client": "Hospital B",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 4,
+      "client": "Hospital C",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 4,
+      "client": "Hospital C",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 4,
+      "client": "Hospital A",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 4,
+      "client": "Hospital A",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 4,
+      "client": "Hospital B",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 4,
+      "client": "Hospital B",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 4,
+      "client": "Hospital A",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 4,
+      "client": "Hospital B",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 4,
+      "client": "Hospital C",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 5,
+      "client": "Hospital A",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 5,
+      "client": "Hospital A",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 5,
+      "client": "Hospital C",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 5,
+      "client": "Hospital C",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 5,
+      "client": "Hospital B",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 5,
+      "client": "Hospital B",
+      "direction": "client->server",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {
+        "train_loss": "float",
+        "client": "str"
+      }
+    },
+    {
+      "round": 5,
+      "client": "Hospital B",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 5,
+      "client": "Hospital C",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    },
+    {
+      "round": 5,
+      "client": "Hospital A",
+      "direction": "server->client",
+      "num_tensors": 6,
+      "num_parameters": 4097,
+      "payload_bytes": 17156,
+      "tensor_shapes": [
+        [
+          64,
+          30
+        ],
+        [
+          64
+        ],
+        [
+          32,
+          64
+        ],
+        [
+          32
+        ],
+        [
+          1,
+          32
+        ],
+        [
+          1
+        ]
+      ],
+      "extra_fields": {}
+    }
+  ],
+  "audits": [
+    {
+      "round": 1,
+      "client": "Hospital C",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 1,
+      "client": "Hospital C",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 1,
+      "client": "Hospital A",
+      "local_samples": 120,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 1,
+      "client": "Hospital A",
+      "local_samples": 120,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 1,
+      "client": "Hospital B",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 1,
+      "client": "Hospital B",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 2,
+      "client": "Hospital A",
+      "local_samples": 120,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 2,
+      "client": "Hospital A",
+      "local_samples": 120,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 2,
+      "client": "Hospital C",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 2,
+      "client": "Hospital C",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 2,
+      "client": "Hospital B",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 2,
+      "client": "Hospital B",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 3,
+      "client": "Hospital A",
+      "local_samples": 120,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 3,
+      "client": "Hospital A",
+      "local_samples": 120,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 3,
+      "client": "Hospital C",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 3,
+      "client": "Hospital C",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 3,
+      "client": "Hospital B",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 3,
+      "client": "Hospital B",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 4,
+      "client": "Hospital C",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 4,
+      "client": "Hospital C",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 4,
+      "client": "Hospital A",
+      "local_samples": 120,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 4,
+      "client": "Hospital A",
+      "local_samples": 120,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 4,
+      "client": "Hospital B",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 4,
+      "client": "Hospital B",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 5,
+      "client": "Hospital A",
+      "local_samples": 120,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 5,
+      "client": "Hospital A",
+      "local_samples": 120,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 5,
+      "client": "Hospital C",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 5,
+      "client": "Hospital C",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 5,
+      "client": "Hospital B",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    },
+    {
+      "round": 5,
+      "client": "Hospital B",
+      "local_samples": 121,
+      "payload_values": 4097,
+      "shape_matches_raw_data": false,
+      "raw_rows_found_in_payload": 0,
+      "labels_vector_sent": false,
+      "passed": true
+    }
+  ]
+}
