@@ -1,6 +1,6 @@
 # Federated Learning for Privacy-Preserving Medical AI (PyTorch + Flower)
 
-A complete, reproducible, **CPU-only** research project that simulates three hospitals collaboratively training
+A complete, reproducible, a research project that simulates three hospitals collaboratively training
 a breast-cancer diagnosis model with **Federated Averaging (FedAvg)**, without exchanging patient records.
 It compares federated learning with centralized training and with hospitals training alone, under IID and
 non-IID data, and includes a privacy and communication analysis and a Streamlit dashboard.
